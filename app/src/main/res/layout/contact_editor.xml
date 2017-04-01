@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/EditText01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:minLines="4"
+                android:hint="FirstName"/>
+
+
+
+            <EditText
+                android:id="@+id/last"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="4"
+                android:layout_weight="2"
+                android:hint="LastName"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/EditText02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="2"
+                android:layout_weight="2"
+                android:hint="Phone#"/>
+
+
+            <EditText
+                android:id="@+id/EditText03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="2"
+                android:layout_weight="2"
+                android:hint="Email"/>
+
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="3"
+                android:layout_weight="2"
+                android:hint="Date"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <TextView android:id="@+id/vdate"
+                    android:layout_width="151dp"
+                    android:layout_height="match_parent"
+                    android:minLines="7"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:width="120dip"></TextView>
+
+                <Button android:id="@+id/BtnDate"
+                    android:layout_width="57dp"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:textStyle="bold"
+                    android:textSize="24dip"
+                    android:height="30dip"
+
+                    android:width="30dip"></Button>
+                <TextView android:id="@+id/vtime"
+                    android:layout_width="151dp"
+                    android:layout_height="match_parent"
+                    android:minLines="7"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:width="120dip"></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/Button01"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:text="@string/btnsave" />
+
+
+
+            <Button
+                android:id="@+id/Button02"
+                android:layout_width="150dip"
+
+                android:layout_height="wrap_content"
+                android:text="@string/btncancel" />
+        </GridLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
